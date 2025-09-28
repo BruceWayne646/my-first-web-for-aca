@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACAA LIAT DEH</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+    }
+    .container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 5px   15px rgba(0,0,0,0.1);
+        max-width: 600px;
+        margin: 0 auto;
+    } 
+    h1
+        { color: #ff6b6b; margin-bottom: 20px; }
+    .foto { width: 200px; height: 200px; border-radius: 50%; border: 5px solid #ff6b6b; margin: 20px auto;}
+    .pesan { background-color: #fff0f0; padding: 20px; border-radius: 10px; margin: 20px 0; line-height: 1.6; }
+    .btn {background-color: #ff6b6b; color: white; padding: 12px 25px; border: none; border-radius: 25px; font-size: 18px; cursor: pointer; margin: 10;}
+    .btn:hover { background-color: #ff5252; }
+    .heart { color: #ff5252 ; font-size: 24px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ACAA LIAT DEH</h1>
+        <img src="https://i.ibb.co.com/v6wGG6nV/ACAA.jpg" alt="Foto ACAA" class="foto">
+        <div class="pesan">
+            <p><strong>Halo ACAA!🔥🔥 </strong></p>
+            <p>Aku Lagi Belajar Buat Bikin Web Lebih Menarik🎉</p>
+            <p>Gimana? Lumayan lah ya buat pemula mah</p>
+            <p>HAHAHAHAHA</p>
+            <p><strong>GOOD LUCK ACA! DOA TERBAIK BUAT KAMU!</strong></p>
+        </div>
+
+        <button class="btn" onclick="tampilkanPesan()">🎯Klik Aku!</button>
+        <button class="btn" onclick="gantiWarna()">🎨Ganti Warna!</button>
+        <div>
+            <span class="heart">❤️</span>
+            <span class="heart">💖</span>
+            <span class="heart">💘</span>
+        </div>
+    </div>
+
+    <script>
+        function tampilkanPesan() {
+            alert("Semangat Terus ACAA! Kamu Bisa!🔥🔥");
+        }
+
+       function gantiWarna() {
+        const colors = ['#ffe6e6', '#e6f7ff', '#f0ffe6','#fff0e6', '#f6e6ff'];
+       const randomColor = colors[Math.floor(Math.random() * colors.length)];
+         document.body.style.backgroundColor = randomColor;
+         }
+    </script>
+</body>
+</html>
